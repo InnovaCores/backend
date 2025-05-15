@@ -29,6 +29,7 @@ public class TaskItem extends AuditableModel {
     public TaskItem(UserStory userStory, String title, String description, Integer estimation){
         this.title = title;
         this.description = description;
+         // Inicializamos estado TO_DO y asociamos la tarea a la UserStory correspondiente
         this.status = Status.TO_DO; //-----
         this.userStory = userStory;
         this.estimation = estimation;
