@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping(value = "/api/v1/epics", produces = MediaType.APPLICATION_JSON_VALUE)
 @Tag(name = "Epics", description = "Epic Management Endpoints")
+// Esta clase expone los endpoints REST del agregado Epic dentro del bounded context "backlog", siguiendo una arquitectura limpia donde el controlador actúa solo como orquestador: delega la lógica a los servicios de comando y consulta, y utiliza ensambladores para transformar las entidades del dominio en recursos de respuesta, manteniendo así un fuerte desacoplamiento entre capas.
 public class EpicsController {
     private final EpicQueryService epicQueryService;
     private final EpicCommandService epicCommandService;
