@@ -21,6 +21,7 @@ public class EpicCommandServiceImpl implements EpicCommandService {
     @Override
     public Long handle(CreateEpicCommand command){
         var title = command.title();
+        // Comprobamos título único para evitar duplicados y lanzamos excepción descriptiva en caso contrario
         if (this.epicRepository.existsByTitle(title)){
             throw new IllegalArgumentException("Epic with " + title + " as title already exists");
         }
