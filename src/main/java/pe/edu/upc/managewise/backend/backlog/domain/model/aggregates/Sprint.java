@@ -13,6 +13,7 @@ import java.util.Date;
 
 @Getter
 @Entity
+// Representa una iteración de trabajo (sprint) en el backlog, con su objetivo, fechas y estado, siguiendo el modelo de dominio ágil.
 public class Sprint extends AuditableAbstractAggregateRoot<Sprint> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
