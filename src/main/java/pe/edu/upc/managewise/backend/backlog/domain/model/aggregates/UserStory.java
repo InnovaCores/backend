@@ -10,6 +10,7 @@ import pe.edu.upc.managewise.backend.shared.domain.model.aggregates.AuditableAbs
 
 @Getter
 @Entity
+// Representación de una historia de usuario dentro del backlog, relacionándola con una épica y un sprint, con esfuerzo estimado y tareas asociadas.
 public class UserStory extends AuditableAbstractAggregateRoot<UserStory> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
