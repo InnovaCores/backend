@@ -83,8 +83,8 @@ public class MemberController {
         return ResponseEntity.ok(memberResource);
     }
 
-    //annotacion DeleteMapping
-    // y establecemos si tendra alguna ruta en el path profileId
+    // Indicamos que este método responderá a solicitudes HTTP DELETE.
+    // En este caso, se espera que la URL incluya un identificador (memberId) en el path.
     @DeleteMapping("/{memberId}")
     //recordemos quetodo controller es Response Entitiy
     //El delete va acompañado d eun identificador para encontrarloy eliminarlo
@@ -94,9 +94,10 @@ public class MemberController {
         //Creamos el Command y el handler
         var deleteMemberCommand = new DeleteMemberCommand(memberId);
         this.memberCommandService.handle(deleteMemberCommand);
-        //devolvemos la respuesta
-        //aca no debemos enviar mensaje de error,
-        // en este caso seria solo el noContent de que no ecnontro el resource
+        // Respondemos con HTTP 204 No Content, que indica que la operación fue exitosa,
+        // pero no se devuelve contenido en el cuerpo de la respuesta.
+        // Si el recurso no se encuentra, esto también puede ser una respuesta válida,
+        // siempre que se haya manejado adecuadamente en el servicio.
         return ResponseEntity.noContent().build();
     }
 }
