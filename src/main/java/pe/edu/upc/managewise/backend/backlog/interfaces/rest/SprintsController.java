@@ -20,6 +20,7 @@ import pe.edu.upc.managewise.backend.backlog.interfaces.rest.transform.UpdateSpr
 import java.util.List;
 import java.util.stream.Collectors;
 
+// REST Controller para Sprints: expone endpoints CRUD y delega lógica a SprintCommandService y SprintQueryService
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 @RestController
 @RequestMapping(value = "/api/v1/sprints", produces = MediaType.APPLICATION_JSON_VALUE)
