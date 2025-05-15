@@ -1,8 +1,8 @@
 package pe.edu.upc.managewise.backend.members.application.internal.queryservices;
 
 import org.springframework.stereotype.Service;
-import pe.edu.upc.managewise.backend.backlog.domain.model.aggregates.Sprint;
-import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetSprintByTittleQuery;
+//import pe.edu.upc.managewise.backend.backlog.domain.model.aggregates.Sprint;
+//import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetSprintByTittleQuery;
 import pe.edu.upc.managewise.backend.members.domain.model.aggregates.Member;
 import pe.edu.upc.managewise.backend.members.domain.model.queries.GetAllMembersQuery;
 import pe.edu.upc.managewise.backend.members.domain.model.queries.GetMemberByFullNameQuery;

@@ -3,8 +3,8 @@ package pe.edu.upc.managewise.backend.backlog.application.internal.queryservices
 import org.springframework.stereotype.Service;
 import pe.edu.upc.managewise.backend.backlog.domain.model.aggregates.UserStory;
 import pe.edu.upc.managewise.backend.backlog.domain.model.entities.TaskItem;
-import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetAllUserStoriesQuery;
 import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetAllTaskItemsByUserStoryIdQuery;
+import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetAllUserStoriesQuery;
 import pe.edu.upc.managewise.backend.backlog.domain.model.queries.GetUserStoryByIdQuery;
 import pe.edu.upc.managewise.backend.backlog.domain.services.UserStoryQueryService;
 import pe.edu.upc.managewise.backend.backlog.infrastructure.persistence.jpa.repositories.UserStoryRepository;
