@@ -8,6 +8,7 @@ import pe.edu.upc.managewise.backend.shared.domain.model.aggregates.AuditableAbs
 
 @Getter
 @Entity
+// Representa una épica dentro del dominio de backlog, encapsulando su estado, título y descripción, con soporte para auditoría y comandos de creación.
 public class Epic extends AuditableAbstractAggregateRoot<Epic> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
