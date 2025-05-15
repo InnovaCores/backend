@@ -21,14 +21,14 @@ public class OpenApiConfiguration {
         var openApi = new OpenAPI();
         openApi
                 .info(new Info()
-                        .title("Managewise Backend API")
-                        .description("Managewise backend REST API documentation.")
+                        .title("ManageCores Backend API")
+                        .description("ManageCores backend REST API documentation.")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0")
                                 .url("https://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
-                        .description("Managewise Backend Documentation")
-                        .url("https://github.com/Horizon-ManageWise/managewise-backend/tree/develop"));
+                        .description("ManageCores Backend Documentation")
+                        .url("https://github.com/InnovaCores/backend.git"));
 //*************************iam*************************(se tiene que quitar los comentarios cuando añadamos el IAM)
         // Add security scheme
 //        final String securitySchemeName = "bearerAuth";
