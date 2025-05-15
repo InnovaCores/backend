@@ -5,7 +5,6 @@ import pe.edu.upc.managewise.backend.members.domain.model.commands.CreateMemberC
 import pe.edu.upc.managewise.backend.members.domain.model.commands.DeleteMemberCommand;
 import pe.edu.upc.managewise.backend.members.domain.model.commands.UpdateMemberCommand;
 
-import java.util.List;
 import java.util.Optional;
 
 public interface MemberCommandService {

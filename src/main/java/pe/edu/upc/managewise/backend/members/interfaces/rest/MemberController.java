@@ -1,25 +1,11 @@
 package pe.edu.upc.managewise.backend.members.interfaces.rest;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import io.swagger.v3.oas.annotations.tags.Tag;
-//import pe.edu.upc.managewise.backend.issues.domain.model.commands.DeleteIssueCommand;
-//import pe.edu.upc.managewise.backend.issues.domain.model.queries.GetAllIssuesQuery;
-//import pe.edu.upc.managewise.backend.issues.domain.model.queries.GetIssueByIdQuery;
-//import pe.edu.upc.managewise.backend.issues.domain.services.IssueCommandService;
-//import pe.edu.upc.managewise.backend.issues.domain.services.IssueQueryService;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.resources.CreateIssueResource;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.resources.EventRecordItemResource;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.resources.IssueResource;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.transform.CreateIssueCommandFromResourceAssembler;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.transform.EventRecordItemResourceFromEntityAssembler;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.transform.IssueResourceFromEntityAssembler;
-//import pe.edu.upc.managewise.backend.issues.interfaces.rest.transform.UpdateIssueCommandFromResourceAssembler;
-import pe.edu.upc.managewise.backend.members.domain.model.aggregates.Member;
 import pe.edu.upc.managewise.backend.members.domain.model.commands.DeleteMemberCommand;
-import pe.edu.upc.managewise.backend.members.domain.model.commands.UpdateMemberCommand;
 import pe.edu.upc.managewise.backend.members.domain.model.queries.GetAllMembersQuery;
 import pe.edu.upc.managewise.backend.members.domain.model.queries.GetMemberByIdQuery;
 import pe.edu.upc.managewise.backend.members.domain.services.MemberCommandService;

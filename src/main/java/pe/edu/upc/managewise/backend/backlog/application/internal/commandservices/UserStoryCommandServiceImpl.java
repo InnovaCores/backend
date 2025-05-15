@@ -3,6 +3,7 @@ package pe.edu.upc.managewise.backend.backlog.application.internal.commandservic
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import pe.edu.upc.managewise.backend.backlog.domain.model.aggregates.UserStory;
+import pe.edu.upc.managewise.backend.backlog.domain.model.commands.*;
 import pe.edu.upc.managewise.backend.backlog.domain.model.entities.TaskItem;
 import pe.edu.upc.managewise.backend.backlog.domain.services.UserStoryCommandService;
 import pe.edu.upc.managewise.backend.backlog.infrastructure.persistence.jpa.repositories.EpicRepository;
