@@ -10,6 +10,7 @@ import pe.edu.upc.managewise.backend.shared.domain.model.entities.AuditableModel
 @Getter
 @Entity
 @Table(name= "event_issue_items")
+//eventrecorditem
 public class EventRecordItem extends AuditableModel {
 
     @Id
