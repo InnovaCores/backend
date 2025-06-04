@@ -6,7 +6,7 @@ import pe.edu.upc.managewise.backend.issues.domain.model.commands.DeleteIssueCom
 import pe.edu.upc.managewise.backend.issues.domain.model.commands.UpdateIssueCommand;
 
 import java.util.Optional;
-
+//issuecommandservice
 public interface IssueCommandService {
     Long handle(CreateIssueCommand command);
     Optional<Issue> handle(UpdateIssueCommand command);
