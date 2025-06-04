@@ -15,6 +15,7 @@ import pe.edu.upc.managewise.backend.issues.infrastructure.persistence.jpa.issue
 import java.util.Optional;
 
 @Service
+// issuecomandserviceimpl
 public class IssueCommandServiceImpl implements IssueCommandService {
     //Dependency Injection
     private final IssueRepository issueRepository;
