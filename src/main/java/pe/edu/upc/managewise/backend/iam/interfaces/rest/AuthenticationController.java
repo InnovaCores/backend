@@ -119,6 +119,10 @@ public class AuthenticationController {
           @RequestBody SignUpResource signUpResource,
           HttpServletRequest request) {
 
+    System.out.println("🔐 Username: " + signUpResource.username());
+    System.out.println("🔐 Password: " + signUpResource.password());
+    System.out.println("🔐 Recaptcha token: " + signUpResource.recaptchaToken());
+
     if (isWebRequest(request)) {
       String token = signUpResource.recaptchaToken(); // ✅ accediendo al campo del record
       if (token == null || !recaptchaService.verifyRecaptcha(token)) {

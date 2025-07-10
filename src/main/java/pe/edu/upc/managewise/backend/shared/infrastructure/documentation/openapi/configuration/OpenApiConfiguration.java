@@ -21,13 +21,13 @@ public class OpenApiConfiguration {
         var openApi = new OpenAPI();
         openApi
                 .info(new Info()
-                        .title("Managewise Backend API")
-                        .description("Managewise backend REST API documentation.")
+                        .title("ManageCore Backend API")
+                        .description("ManageCore backend REST API documentation.")
                         .version("v1.0.0")
                         .license(new License().name("Apache 2.0")
                                 .url("https://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
-                        .description("Managewise Backend Documentation")
+                        .description("ManageCore Backend Documentation")
                         .url("https://github.com/Horizon-ManageWise/managewise-backend/tree/develop"));
 //*************************iam*************************
         // Add security scheme
